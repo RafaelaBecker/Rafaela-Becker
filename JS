@@ -1,3 +1,0 @@
-document.getElementById('mensagemBtn').addEventListener('click', () => {
-    alert('Olá! Você clicou no botão.');
-});
