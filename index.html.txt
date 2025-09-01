@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Sobre Mim</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Sobre mim</a></li>
+                <li><a href="formacao.html">Formação</a></li>
+                <li><a href="portfolio.html">Portfólio</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main>
+        <h1>Olá! Eu sou a Rafaela.</h1>
+        <p>tenho 29 anos e nasci em Goiânia. Adoro gatos e tenho duas, a Luna e a Lucky. Gosto muito de jogar jrpgs, ler livros de romance, investigação e mangás, de desenhar e ouvir música como rock e metal.</p>
+            </main>
+</body>
+</html>
