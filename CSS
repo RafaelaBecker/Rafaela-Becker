@@ -1,12 +1,43 @@
-meu_site/
-│
-├── index.html        ← Página inicial
-├── sobre.html        ← Página “Sobre”
-├── servicos.html     ← Página “Serviços”
-├── contato.html      ← Página “Contato”
-│
-├── css/
-│   └── style.css     ← Estilos gerais
-│
-└── js/
-    └── script.js     ← Funções JavaScript
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+.menu ul li {
+    margin: 0 15px;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 10px;
+    display: block;
+}
+
+.menu ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+main {
+    padding: 40px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
