@@ -4,31 +4,135 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV - Portfólio</title>
-    <link rel="stylesheet" href="estilos.css">
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Fundo da página */
+        body {
+            background-color: #000000; /* Fundo preto */
+            color: #fff; /* Texto branco padrão */
+            font-family: Arial, sans-serif;
+        }
+
+        /* Menu fixo */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #222; /* Menu escuro */
+            z-index: 1000;
+        }
+
+        .menu ul {
+            display: flex;
+            list-style: none;
+            justify-content: center;
+        }
+
+        .menu ul li {
+            margin: 0 15px;
+        }
+
+        .menu ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 15px 10px;
+            display: block;
+        }
+
+        .menu ul li a:hover {
+            background-color: #ffb6c1; /* Rosa pastel ao passar o mouse */
+            color: #000;
+            border-radius: 5px;
+        }
+
+        /* Seções (colunas) */
+        section {
+            padding: 120px 40px 60px 40px; /* Espaço para o menu fixo */
+            min-height: 100vh;
+            background-color: #ffb6c1; /* Rosa pastel */
+            color: #000; /* Texto preto dentro das seções */
+            margin: 20px auto; /* Espaçamento entre seções */
+            border-radius: 10px;
+            max-width: 1200px; /* Centraliza a seção */
+        }
+
+        /* Títulos */
+        section h1, section h2 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        /* Formulário de contato */
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        label {
+            margin-top: 10px;
+            text-align: left;
+        }
+
+        input, textarea {
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 100%;
+        }
+
+        textarea {
+            resize: vertical;
+            height: 100px;
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 4px;
+            background-color: #000; /* Botão preto */
+            color: #ffb6c1; /* Texto rosa pastel */
+        }
+
+        button:hover {
+            background-color: #222;
+            color: #fff;
+        }
+    </style>
 </head>
 <body>
     <header>
-    <nav class="menu">
-        <ul>
-            <li><a href="#sobre">Sobre mim</a></li>
-            <li><a href="#formacao">Formação</a></li>
-            <li><a href="#portfolio">Portfólio</a></li>
-            <li><a href="#contato">Contato</a></li>
-        </ul>
-    </nav>
-</header>
+        <nav class="menu">
+            <ul>
+                <li><a href="#sobre">Sobre mim</a></li>
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
 
-   <section id="sobre">
+    <section id="sobre">
         <h1>Sobre mim:</h1>
-        <p>Olá! Eu sou a Rafaela.Tenho 29 anos, nasci em Goiânia e atualmente estou cursando Análise e desenvolvimento de sistemas. Adoro gatos e tenho duas, uma gata preta chamada Luna e uma siames chamada Lucky.
-            Gosto muito de jogar jrpgs como Persona e Chrono Cross. Ler livros de romance, investigação e mangás, de desenhar e ouvir música como rock e metal.</p>
-           </section>
-    
-   <section id="formacao">
-<ul>
+        <p>Olá! Eu sou a Rafaela. Tenho 29 anos, nasci em Goiânia e atualmente estou cursando Análise e desenvolvimento de sistemas. Adoro gatos e tenho duas, uma gata preta chamada Luna e uma siames chamada Lucky.  
+        Gosto muito de jogar jrpgs como Persona e Chrono Cross. Ler livros de romance, investigação e mangás, de desenhar e ouvir música como rock e metal.</p>
+    </section>
+
+    <section id="formacao">
+        <ul>
             <li>Ensino Médio completo</li>
             <li>Cursando Analise e desenvolvimento de sistemas</li>
-           
         </ul>
 
         <h2>Idiomas</h2>
@@ -37,38 +141,33 @@
             <li>Inglês – Intermediário</li>
             <li>Japonês – Básico</li>
         </ul>
-       </section>
+    </section>
 
     <section id="portfolio">
-    <h2>Portfólio</h2>
+        <h2>Portfólio</h2>
         <p>Aqui está um projeto que desenvolvi:</p>
         <ul>
-        
             <li>https://rafaelabecker.github.io/index.html/</li>
-            </ul>
-</section>
+        </ul>
+    </section>
 
     <section id="contato">
-    <h2>Contato</h2>
-    <form>
-         <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+        <h2>Contato</h2>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
 
-        <label for="Telefone">Telefone:</label>
-        <input type="telefone" id="telefone" name="telefone" placeholder="(**)*****-****">
-        
-        <label for="email">E-mail:</label>
-        <input type="email" id="email" name="email" placeholder="Digite seu e-mail">
+            <label for="telefone">Telefone:</label>
+            <input type="telefone" id="telefone" name="telefone" placeholder="(**)*****-****">
+            
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu e-mail">
 
-        <label for="mensagem">Mensagem:</label>
-        <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem"></textarea>
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem"></textarea>
 
-        <button type="submit">Enviar</button>
-    </form>
-</section>
-
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
 </body>
 </html>
-
-
-
