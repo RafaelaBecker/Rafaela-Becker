@@ -1,0 +1,12 @@
+meu_site/
+│
+├── index.html        ← Página inicial
+├── sobre.html        ← Página “Sobre”
+├── servicos.html     ← Página “Serviços”
+├── contato.html      ← Página “Contato”
+│
+├── css/
+│   └── style.css     ← Estilos gerais
+│
+└── js/
+    └── script.js     ← Funções JavaScript
