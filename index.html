@@ -51,10 +51,9 @@
             border-radius: 5px;
         }
 
-        /* Seções (colunas) */
+        /* Seções (colunas) ajustadas */
         section {
-            padding: 120px 40px 60px 40px; /* Espaço para o menu fixo */
-            min-height: 100vh;
+            padding: 80px 40px 40px 40px; /* Menos espaço superior e inferior */
             background-color: #ffb6c1; /* Rosa pastel */
             color: #000; /* Texto preto dentro das seções */
             margin: 20px auto; /* Espaçamento entre seções */
@@ -109,6 +108,16 @@
             background-color: #222;
             color: #fff;
         }
+
+        /* Links dentro das seções */
+        a {
+            color: #0000EE;
+            text-decoration: underline;
+        }
+
+        a:hover {
+            color: #000;
+        }
     </style>
 </head>
 <body>
@@ -147,7 +156,7 @@
         <h2>Portfólio</h2>
         <p>Aqui está um projeto que desenvolvi:</p>
         <ul>
-            <li>https://rafaelabecker.github.io/index.html/</li>
+            <li><a href="https://rafaelabecker.github.io/index.html/" target="_blank">Meu projeto no GitHub Pages</a></li>
         </ul>
     </section>
 
